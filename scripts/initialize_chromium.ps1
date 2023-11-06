@@ -14,6 +14,7 @@ $env:Path = $env:Path + “;C:\src\depot_tools”
 $env:DEPOT_TOOLS_WIN_TOOLCHAIN=0
 
 #Fetch Chromium Source
+$env:vs2022_install="C:\Program Files\Microsoft Visual Studio\2022\Enterprise"
 Set-Location “C:\src\chromium”
 gclient sync
 fetch chromium
